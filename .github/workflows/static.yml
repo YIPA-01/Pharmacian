@@ -25,10 +25,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and export
+      - name: Build static site
         run: |
           npm run build
-          npm run export
           # create .nojekyll so GitHub Pages won't ignore files with underscores
           touch out/.nojekyll
 
