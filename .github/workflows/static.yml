@@ -3,16 +3,16 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main   # change if your default branch is different
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,11 +28,11 @@ jobs:
       - name: Build static site
         run: |
           npm run build
-          # create .nojekyll so GitHub Pages won't ignore files with underscores
+          # create .nojekyll to prevent GitHub Pages ignoring files starting with _
           touch out/.nojekyll
 
       - name: Upload Pages artifact
-        uses: github/pages@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: out
 
@@ -42,7 +42,9 @@ jobs:
     permissions:
       pages: write
       id-token: write
-
+    environment:
+      name: github-pages
     steps:
       - name: Deploy to GitHub Pages
-        uses: github/pages-deploy-action@v1
+        uses: actions/deploy-pages@v4
+        id: deployment
