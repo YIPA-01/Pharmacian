@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
   // ensure exported pages become folder/index.html so routing works on GH Pages
   trailingSlash: true,
 
+  images: {
+    unoptimized: true,
+  },
+
   // any other options you already use (keep them here)
   // experimental: { ... }, images: { ... } etc.
 };
