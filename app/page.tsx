@@ -40,7 +40,7 @@ export default function DefaultDemo() {
         }
       >
         <Image
-          src={`/assets/unhappy-pharmacist.jpg`}
+          src={`./assets/unhappy-pharmacist.jpg`}
           alt="hero"
           height={720}
           width={1400}

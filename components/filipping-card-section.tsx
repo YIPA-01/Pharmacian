@@ -21,7 +21,7 @@ const problemsData: CardData[] = [
   {
     id: "problem-revenue",
     front: {
-      imageSrc: "/assets/unhappy-client.jpg",
+      imageSrc: "./assets/unhappy-client.jpg",
       imageAlt: "Revenue Loss",
       title: "Perte de Revenus",
       description: "72 000 MAD/an perdus à cause des ruptures et ordonnances manquées.",
@@ -34,7 +34,7 @@ const problemsData: CardData[] = [
   {
     id: "problem-time",
     front: {
-      imageSrc: "/assets/pharmacist-surcharged.jpg",
+      imageSrc: "./assets/pharmacist-surcharged.jpg",
       imageAlt: "Time wasted",
       title: "Temps Gaspillé",
       description: "1h/jour perdue à gérer le stress au comptoir et les manques de stock.",
@@ -47,7 +47,7 @@ const problemsData: CardData[] = [
   {
     id: "problem-monopoly",
     front: {
-      imageSrc: "/assets/stagnant-stock.jpg",
+      imageSrc: "./assets/stagnant-stock.jpg",
       imageAlt: "Stagnant growth",
       title: "Croissance Stagnante",
       description: "La parapharmacie dort pendant que vos patients achètent ailleurs.",
@@ -63,7 +63,7 @@ const solutionsData: CardData[] = [
   {
     id: "solution-accessibility",
     front: {
-      imageSrc: "/assets/commander.jpg",
+      imageSrc: "./assets/commander.jpg",
       imageAlt: "Digital Access",
       title: "Accessibilité Digitale",
       description: "Recevez les commandes directement sur votre canal en ligne dédié.",
@@ -76,7 +76,7 @@ const solutionsData: CardData[] = [
   {
     id: "solution-automation",
     front: {
-      imageSrc: "/assets/automatiser.jpg",
+      imageSrc: "./assets/automatiser.jpg",
       imageAlt: "AI Automation",
       title: "Automatisation IA",
       description: "Préparez les commandes sans stress avec l'assistance intelligente.",
@@ -89,7 +89,7 @@ const solutionsData: CardData[] = [
   {
     id: "solution-loyalty",
     front: {
-      imageSrc: "/assets/consulter.jpg",
+      imageSrc: "./assets/consulter.jpg",
       imageAlt: "Customer Loyalty",
       title: "Fidélisation Active",
       description: "Améliorez la satisfaction et boostez les points fidélité.",
