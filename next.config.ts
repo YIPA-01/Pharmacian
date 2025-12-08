@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 
   // GitHub Pages serves from a subpath, so set basePath and assetPrefix
   basePath: repoName,
-  assetPrefix: repoName + "./",
+  assetPrefix: repoName + "/",
 
   // ensure exported pages become folder/index.html so routing works on GH Pages
   trailingSlash: true,
